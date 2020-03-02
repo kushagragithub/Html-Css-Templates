@@ -1,0 +1,9 @@
+function notnull(inputtx) 
+   {
+     if (inputtx.value.length == 0)
+      { 
+         alert("you cannot leave the field empty");  	
+         return false; 
+      }  	
+      return true; 
+    } 

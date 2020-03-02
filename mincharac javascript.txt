@@ -1,0 +1,17 @@
+function mincharac(inputtxt,minlength,maxlength)
+{
+var field=inputtxt.value;
+var mnlen=minlength;
+var mxlen=maxlength;
+
+if(field.length<mnlen||field.length>mxlen)
+{
+alert("please input the user id between "+mnlen+"and"+mxlen+"characters");
+return false;
+}
+else
+{
+alert('password accepted');
+return true;
+}
+}

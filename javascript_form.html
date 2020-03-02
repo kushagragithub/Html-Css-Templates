@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script> 
+function validate()
+{
+
+var username1 =document.loginForm.username.value; 
+var password=document.loginForm.password.value;
+if (username1==null||username1=="")
+{
+
+
+alert("UserName Cannot Be Blank !");
+ return false;
+}
+
+else if(password==null || password=="")
+{
+
+alert("Password Cannot Be Blank");
+ return false;}
+}
+</script>
+<form name ="loginForm" onsubmit="return validate()" class="form-wrap">
+<input type="text" name="username" placeholder="username" class="form-control">
+<input type="password" name="password" placeholder="Password" class="form-control">
+<input type ="submit" class="primary-btn" value ="submit"><br>
+</form>
+</body>
+</html>

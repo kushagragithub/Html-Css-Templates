@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+</head>
+
+<body onload='document.form1.text1.focus()'>
+<div class="mail">
+<p>Do Not Leave Username Empty</p>
+<form name="form1">
+
+Username:<input type='text' name='text1'/><br>
+Password:<input type='text' name='text2'/><br>
+
+<li class="submit"it">
+<input type="submit" name="submit" value="Submit" onclick="notnull(document.form1.text1)"/></li>
+<input type="submit" name="submit" value="Submit" onclick="mincharac(document.form1.text2,0,6)"/></li>
+</form>
+</div>
+<script src="notnull.js"></script>
+<script src="mincharac.js"></script>
+</body>
+</html>
